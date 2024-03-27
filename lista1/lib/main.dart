@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'first_screen.dart'; // Importe a tela FirstScreen
+import 'first_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: MyHomePage(),
       routes: {
-        '/first': (context) => FirstScreen(), // Associe a rota '/first' à tela FirstScreen
+        '/first': (context) => FirstScreen(),
       },
     );
   }
@@ -32,7 +32,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void _navigateToFirstScreen() {
-    Navigator.pushNamed(context, '/first'); // Navegar para a tela FirstScreen
+    Navigator.pushNamed(context, '/first');
   }
 
   @override
@@ -56,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             SizedBox(height: 20),
             ElevatedButton(
-              onPressed: _navigateToFirstScreen, // Chame a função para navegar para FirstScreen
+              onPressed: _navigateToFirstScreen,
               child: Text('Ir para a Tela First'),
             ),
           ],
